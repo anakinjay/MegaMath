@@ -1,3 +1,5 @@
+![alt text](https://repository-images.githubusercontent.com/207891140/86a50000-d4aa-11e9-9d6d-b2fa580c7a87 "Logo Title Text 1")
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/anakinjay/MegaMath/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
