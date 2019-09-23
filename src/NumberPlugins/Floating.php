@@ -18,7 +18,7 @@ final class Floating extends MegaMathPluginBase implements MegaMathNumberInterfa
     }
     public static function fromDec($value)
     {
-        return $value;
+        return floatval($value);
     }
 
     public static function matchType($value) {

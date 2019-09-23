@@ -13,7 +13,7 @@ final class Hex extends MegaMathPluginBase implements MegaMathNumberInterface {
         {
             parent::__construct($value);
             $this->type = "Hex";
-            $this->value = Hex::toFloat($value);
+            $this->value = Hex::toDec($value);
         }
 
 
