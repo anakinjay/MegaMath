@@ -20,6 +20,6 @@ echo "\n";
 echo $math->exponent(77);
 echo "\n";
 echo $math->power(3,4);
-echo "\n";
+
 
 
