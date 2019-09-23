@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "classmap": [
+            "src/",
+            "src/NumberPlugins/"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --colors=always --bootstrap vendor/autoload.php --testdox tests"
+    }
+}
