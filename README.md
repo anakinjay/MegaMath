@@ -1,5 +1,3 @@
-![alt text](https://repository-images.githubusercontent.com/207891140/86a50000-d4aa-11e9-9d6d-b2fa580c7a87 "Logo Title Text 1")
-
 ### Purpose
 This framework is a set of very simple math operations that handle basic math functionality, plus conversion between different number types.  Currently supported number types are:
 - Integer
