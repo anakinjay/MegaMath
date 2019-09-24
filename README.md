@@ -19,6 +19,7 @@ All functions follow this format:
 
 **$megaMathInstance->operation([param 1], [param 2 if needed], [output type - optional defaults to float]);** 
 
+
 ### Usage Examples
 ```php
 <?php
