@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+title: MegaMath - PHP Math and Number Type Conversion Framework
+description: This framework is useful for performing basic math operations, and converting number types such as hex, octal, binary, etc...
+show_download: true
