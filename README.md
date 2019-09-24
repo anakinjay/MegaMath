@@ -13,12 +13,10 @@ This framework is a set of very simple math operations that handle basic math fu
 - [Composer dependency manager](https://getcomposer.org/)
 
 ### Basic Usage
-All MegaMath operations work on the concept of converting to decimal, performing the operation, then outputting in the desired format. Format defaults to floating.
+All MegaMath operations work on the concept of coverting to decimal, performing the operation, then outputting in the desired format. Format defaults to floating.
 
 All functions follow this format:
-
-**$megaMathInstance->operation([param 1], [param 2 if needed], [output type - optional defaults to float]);** 
-
+**$megaMathInstance->operation([param 1], [param 2 if needed], [output type - optional defaults to float]);**
 
 ### Usage Examples
 ```php
