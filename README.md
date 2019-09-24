@@ -1,3 +1,5 @@
+![alt text](https://repository-images.githubusercontent.com/207891140/86a50000-d4aa-11e9-9d6d-b2fa580c7a87 "Logo Title Text 1")
+
 ### Purpose
 This framework is a set of very simple math operations that handle basic math functionality, plus conversion between different number types.  Currently supported number types are:
 - Integer
@@ -14,7 +16,8 @@ This framework is a set of very simple math operations that handle basic math fu
 All MegaMath operations work on the concept of coverting to decimal, performing the operation, then outputting in the desired format. Format defaults to floating.
 
 All functions follow this format:
-$megaMathInstance->operation([param 1], [param 2 if needed], [output type - optional defaults to float]); 
+
+**$megaMathInstance->operation([param 1], [param 2 if needed], [output type - optional defaults to float]); **
 
 ### Usage Examples
 ```php
@@ -50,7 +53,7 @@ echo $math->power(3,4);
 ```
 
 ### Plugin System
-MegaMath uses a plugin system to handle the various conversions between number types. To create your own Number Plugin, place the file in src/NumberPlugins and implement the MegaMathNumberInterface. MegaMath will automatically detect the new plugin using composer, and make your plugin available as an output type.
+MegaMath uses a plugin system to handle the various conversions between number types. To create your own Number Plugin, place the file in **src/NumberPlugins** and implement the **MegaMathNumberInterface**. MegaMath will automatically detect the new plugin using composer, and make your plugin available as an output type.
 
 ### Unit Tests
 23 unit assertion tests are included for the MegaMath class and the included Number Plugins. To run these tests run the following command:
