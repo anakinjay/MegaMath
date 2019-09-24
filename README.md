@@ -55,7 +55,7 @@ MegaMath uses a plugin system to handle the various conversions between number t
 
 - static **toDec** - converts the plugin number type input to a decimal
 - static **fromDec** - converts a decimal into the plugin number type
-- static **matchType** - determines if the input matches the plugin number type. **This can return false positives*. For example, 1001011010 will match both Binary and Integer.
+- static **matchType** - determines if the input matches the plugin number type. **This can return false positives**. For example, 1001011010 will match both Binary and Integer.
 
 You can also create an instance of a particular Number Plugin if needed. Example:
 ```php
