@@ -38,6 +38,11 @@ final class MegaMathClassTest extends TestCase
         $this->assertEquals(5, $actual);
     }
 
+    public function testSquareRoot() {
+        $actual = $this->MegaMath->sqroot(10);
+        $this->assertEquals(3.1622776601683795, $actual);
+    }
+
     public function testExponent() {
         $actual = $this->MegaMath->exponent(2);
         $this->assertEquals(7.38905609893065, $actual);
