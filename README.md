@@ -51,7 +51,35 @@ echo $math->power(3,4);
 ```
 
 ### Plugin System
-MegaMath uses a plugin system to handle the various conversions between number types. To create your own Number Plugin, place the file in **src/NumberPlugins** and implement the **MegaMathNumberInterface**. MegaMath will automatically detect the new plugin using composer, and make your plugin available as an output type.
+MegaMath uses a plugin system to handle the various conversions between number types. All plugins have the following methods available for use:
+-static toDec - converts the plugin number type input to a decimal
+-static fromDec - converts a decimal into the plugin number type
+-static matchType - determines if the input matches the plugin number type. **This can return false positives*. For example, 1001011010 will match both Binary and Integer.
+
+You can also create an instance of a particular Number Plugin if needed. Example:
+```php
+<?php
+$binary = new Binary(10110101);
+
+```
+
+Creating an instance of the class opens up the following non-static methods
+```php
+<?php
+$binary = new Binary(10110101);
+
+//Get the value pre-converted to a decimal
+$decimalValue = $binary->getValue();
+
+//Get the original input value before conversion
+$originalValue = $binary->getOriginalValue();
+
+//Use PHP's magic __toString() method to output the binary value as a string.
+echo $binary;
+
+```
+
+To create your own Number Plugin, place the file in **src/NumberPlugins** and implement the **MegaMathNumberInterface** and extend the **MegaMathPluginBase** class. MegaMath will automatically detect the new plugin using composer, and make your plugin available as an output type.
 
 ### Unit Tests
 23 unit assertion tests are included for the MegaMath class and the included Number Plugins. To run these tests run the following command:
